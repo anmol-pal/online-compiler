@@ -1,0 +1,23 @@
+[
+    { "label": "Java",
+      "value": "java",
+      "initSnippet": "import java.util.*;\npublic class Main { public static void main(String[] args)\n\t{\n\t\tSystem.out.println(\"Hello, world!\");\n\t}\n}",
+      "fetchUrl": "java-compiler-service",
+      "port": "8080",
+      "extension": "java"
+    },
+    { "label": "Python",
+      "value": "python" ,
+      "initSnippet": "print(\"Hello World from Python!\")",
+      "fetchUrl": "34.71.239.53",
+      "port": "8082",
+      "extension": "py"
+    },
+    { "label": "Haskell",
+      "value": "hs",
+      "initSnippet": "main = do putStrLn \"Hello, World from Haskell!\"",
+      "fetchUrl": "34.30.226.63",
+      "port": "8084",
+      "extension": "hs"
+    }
+  ]

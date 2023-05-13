@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: frontenddep
+  name: frontenddep
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: frontenddep
+  template:
+    metadata:
+      labels:
+        app: frontenddep
+    spec:
+      containers:
+      - image: bhavit32/frontend:latest
+        name: frontenddep
+        ports:
+        - containerPort: 30000

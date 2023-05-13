@@ -1,0 +1,20 @@
+version: "3.9"
+services:
+  java:
+    image: "gcr.io/applied-radar-376321/java-compiler-svc:0.0.1"
+    build: .
+    ports:
+      - "8080:8080"
+      - "8081:8081"
+  python:
+    image: "gcr.io/applied-radar-376321/python-compiler-svc:0.0.1"
+    build: .
+    ports:
+      - "8082:8082"
+      - "8083:8083"
+  haskell:
+    image: "gcr.io/applied-radar-376321/haskell-compiler-svc:0.0.1"  
+    build: .
+    ports:
+      - "8084:8084"
+      - "8085:8085"
